@@ -10,5 +10,21 @@ const movieSchema = new Schema({
   showtimes: [String],
 });
 
-const movie = mongoose.model("Movie", movieSchema);
-module.exports = movie;
+const movieModel = mongoose.model("Movie", movieSchema);
+
+module.exports = movieModel;
+
+// let str = "string"
+// let num = 12345
+// let obj = {
+//   prop1: 1,
+//   prop2: 2,
+//   prop3: 3
+// }
+// let arr = [1,2,3,4]
+
+// function func () {
+//   console.log("hello")
+// }
+
+// module.exports = {movieModel, str, num, obj, arr, func};
