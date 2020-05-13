@@ -103,12 +103,3 @@ Movie.insertMany(movies)
   .catch((err) => console.log(err));
 
 
-const Movie = require('../models/Movie')
-
-
-// const exportObj = require('../models/Movie')
-// const {str, num, obj, arr, func} = require('../models/Movie')
-
-// console.log(exportObj, str, num, obj, arr, func)
-
-// func()
