@@ -8,11 +8,11 @@ class Movie extends Component {
   };
 
   async componentDidMount() {
-    const movie = await Axios.get(
+    const res = await Axios.get(
       `http://localhost:5000/movies/${this.props.match.params.id}`
     );
     this.setState({
-      movie: movie.data,
+      movie: res.data,
     });
   }
 
